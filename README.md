@@ -1,1 +1,1 @@
-ES6 Basics - JavaScript, ES6
+ES6, JAVASCRIPT, TYPESCRIPT 
