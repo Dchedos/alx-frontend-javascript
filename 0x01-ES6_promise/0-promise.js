@@ -1,14 +1,31 @@
-function getResponseFromAPI() {
+  // Some logic here
   return new Promise((resolve, reject) => {
-    // Simulating an asynchronous API call
-    setTimeout(() => {
-      const response = 'API response data';
-      // Resolve the Promise with the response
-      resolve(response);
-      
-      // Reject the Promise (uncomment the lines below to simulate an error)
-      // const error = 'An error occurred while fetching data from API';
-      // reject(error);
-    }, 2000); // Simulating a delay of 2 seconds
+    // Some logic here
+    if (/* some condition */) {
+      resolve(/* some value */);
+    } else {
+      reject(/* some error */);
+    }
   });
 }
+
+// To use the function, we can either use then/catch or async/await syntax
+// Using then/catch
+getResponseFromAPI()
+  .then((value) => {
+    // Do something with the value
+  })
+  .catch((error) => {
+    // Handle the error
+  });
+
+// Using async/await
+(async () => {
+  try {
+    let value = await getResponseFromAPI();
+    // Do something with the value
+  } catch (error) {
+    // Handle the error
+  }
+})();
+
