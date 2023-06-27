@@ -1,10 +1,4 @@
 export default function iterateThroughObject(reportWithIterator) {
-  if (!reportWithIterator) {
-    console.log('Placeholder');
-  }
-}
-
-export default function iterateThroughObject(reportWithIterator) {
   // Initialize an empty array to store the names
   let names = [];
   // Loop through the iterator object
