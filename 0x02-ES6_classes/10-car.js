@@ -6,7 +6,7 @@ class Car {
   }
 
   cloneCar() {
-    const clonedCar = Object.assign(Object.create(Object.getPrototypeOf(this)), this);
-    return clonedCar;
+    const NewObj = this.constructor[Symbol.species] || this.constructor;
+    const clone = new NewObj();
+    return clone;
   }
-}
